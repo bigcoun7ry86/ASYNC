@@ -1,9 +1,9 @@
-import { ExampleController } from './controllers/ExampleController.js';
-
+import { questionsController } from './controllers/questionsController.js';
+import { categoryController } from "./controllers/categoryController.js";
 class App {
 
-  ExampleController = new ExampleController() // ☑️ you can remove this - example only
-
+  questionsController = new questionsController()
+  categoryController = new categoryController()
 }
 
 window['app'] = new App()
